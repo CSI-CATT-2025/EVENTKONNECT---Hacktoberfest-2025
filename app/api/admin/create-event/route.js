@@ -6,7 +6,7 @@ dotenv.config(); // Load environment variables
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
-if (!GROQ_API_KEY) {
+if (!process.env.GROQ_API_KEY) {
     console.error("Missing GROQ_API_KEY in environment variables!");
 }
 
